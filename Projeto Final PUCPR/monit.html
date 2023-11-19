@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrosafe</title>
+    <link rel="stylesheet" href="monit.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img class="tomate" src="./images/Logo.png" alt="company logo">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="grafico.html" class="hover-link">Dashboard</a></li>
+                    <li><a href="index.html" class="hover-link primary-button">Logout</a></li>
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section class="examples-section">
+        <div class="container">
+            <div class="examples-header flex">
+                <h2 class="examples-heading-text">MONITORAMENTO</h2>
+            </div>
+            <BR>
+            <h2 class="examples-heading-text">ESTUFA 1</h2>
+            <div class="examples-area flex">
+                <a  class="examples-card">
+                    <h3 class="card-text">❌ DOENTE</h3>
+                </a>
+                <a class="examples-card"  >
+                    <h3 class="card-text">⚠️ ATENÇÃO</h3>
+                </a>
+                <a class="examples-card" >
+                    <h3 class="card-text">💧 DESIDRATADO</h3>
+                </a>
+                <a class="examples-card" >
+                    <h3 class="card-text">✔️ SAUDÁVEL</h3>
+                </a>
+            </div>
+            <h2 class="examples-heading-text">ESTUFA 2</h2>
+            <div class="examples-area flex">
+                <a  class="examples-card">
+                    <h3 class="card-text">❌ DOENTE</h3>
+                </a>
+                <a class="examples-card" >
+                    <h3 class="card-text">⚠️ ATENÇÃO</h3>
+                </a>
+                <a class="examples-card" >
+                    <h3 class="card-text">💧 DESIDRATADO</h3>
+                </a>
+                <a class="examples-card" >
+                    <h3 class="card-text">✔️ SAUDÁVEL</h3>
+                </a>
+            </div>
+            <h2 class="examples-heading-text">ESTUFA 3</h2>
+            <div class="examples-area flex">
+                <a  class="examples-card">
+                    <h3 class="card-text">❌ DOENTE</h3>
+                </a>
+                <a class="examples-card"  >
+                    <h3 class="card-text">⚠️ ATENÇÃO</h3>
+                </a>
+                <a class="examples-card" >
+                    <h3 class="card-text">💧 DESIDRATADO</h3>
+                </a>
+                <a class="examples-card" >
+                    <h3 class="card-text">✔️ SAUDÁVEL</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="subfooter">
+            <div class="container flex subfooter-container">
+                <a class="hover-link2" href="#">© 2023 Agrosafe. Todos os direitos reservados</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="grafico.css">
+    <title>AgroSafe</title>
+</head>
+
+<body>
+
+    <!-- Barra Lateral -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="monit.html"><i class='bx bx-plus-medical'></i></i>Estufas</a></li>
+            <li><a href=""><i class='bx bx-images'></i></i>Imagens Capturadas</a></li>
+            <li><a href=""><i class='bx bx-copy-alt'></i></i>Relatórios</a></li> 
+            <li><a href=""><i class='bx bx-help-circle'></i></i></i>Ajuda</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="index.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Fim da Barra Lateral -->
+
+    <!-- Conteúdo Principal -->
+    <div class="content">
+        <!-- Barra de Navegação -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Procurar...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="editar.html" class="profile">
+                <img src="images/Logo.png">
+            </a>
+        </nav>
+
+        <!-- Fim da Barra de Navegação -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                       
+                </div>
+                
+            </div>
+
+            <!-- Informações -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            1,074
+                        </h3>
+                        <p>Tomates Análisados</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-show-alt'></i>
+                    <span class="info">
+                        <h3>
+                            3,944
+                        </h3>
+                        <p>Tomates Pendentes</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            2,375
+                        </h3>
+                        <p>Aumento na Produção</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-dollar-circle'></i>
+                    <span class="info">
+                        <h3>
+                            R$6,742
+                        </h3>
+                        <p>Aumento nos Lucros</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- Fim das Informações -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Verificações</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Data</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/saudavel.png">
+                                    <p>12473</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">Completo</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/medio.png">
+                                    <p>23711</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pendente</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/tomatedoente.jpg">
+                                    <p>37102</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Analisando</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Lembretes -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Monitoramento</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Fileira 1</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Fileira 2</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Fileira 3</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Fim dos Lembretes-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="grafico.js"></script>
+</body>
+
+</html>
