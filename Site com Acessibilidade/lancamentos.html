@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>RK Store - Lançamentos</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background-color: #240202;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 8%;
+            background-color: #240202;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo i {
+            color: #ff0408;
+            font-size: 32px;
+            margin-right: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            transition: color .55s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff0408;
+        }
+
+        .header-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-icons i {
+            margin-right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+
+        .header-icons i:hover {
+            transform: translateY(-5px);
+            color: #ff0408;
+        }
+
+        .content {
+            padding: 150px 10% 50px;
+        }
+
+        .content h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+        }
+
+        .product {
+            margin-bottom: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .product-description {
+            flex: 1;
+        }
+
+        .btn-buy {
+            background-color: var(--main-color);
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-buy:hover {
+            background-color: #e00307;
+        }
+
+        /* Estilos para o footer */
+        footer {
+            background-color: var(--bg-color);
+            color: var(--tex-color);
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-logo a {
+            color: var(--tex-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo a i {
+            color: var(--main-color);
+            font-size: 1.8rem;
+            margin-right: 5px;
+        }
+
+        .footer-icons a {
+            color: var(--tex-color);
+            font-size: 1.5rem;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .footer-icons a:last-child {
+            margin-right: 0;
+        }
+
+        .footer-icons a:hover {
+            color: var(--main-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom p {
+            color: var(--tex-color);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><i class='bx bx-extension'></i>RK Store</a>
+    
+        <nav>
+            <ul class="navegação">
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="lancamentos.html">Lançamentos</a></li>
+                <li><a href="oferta.html">Oferta do dia</a></li>
+                <li><a href="monte.html">Monte seu PC</a></li>
+            </ul>
+        </nav>
+    
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Lançamentos</h1>
+        <div class="product">
+            <img src="product1.png" alt="Produto 1">
+            <div class="product-info">
+                <div class="product-description">
+                    <h2>Computador Gamer Ultra</h2>
+                    <p>Intel Core i9, 32GB RAM, RTX 3090</p>
+                    <p>R$15,999.00</p>
+                </div>
+                <a href="#" class="btn-buy">Comprar</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://img.terabyteshop.com.br/produto/g/mouse-gamer-dazz-orpheus-1200dpi-sensor-pixart-3327-5-botoes-usb-black-62000089_173262.jpg" alt="Produto 2">
+            <div class="product-info">
+                <div class="product-description">
+                    <h2>Mouse Gamer SpeedX</h2>
+                    <p>Resolução de 20000 DPI, RGB</p>
+                    <p>R$399.00</p>
+                </div>
+                <a href="#" class="btn-buy">Comprar</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="product3.png" alt="Produto 3">
+            <div class="product-info">
+                <div class="product-description">
+                    <h2>Computador Gamer LightX</h2>
+                    <p>Intel Core i3, 8 RAM, GTX 1650</p>
+                    <p>R$4589.00</p>
+                </div>
+                <a href="#" class="btn-buy">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><i class="bx bx-extension"></i>RK Store</a>
+            </div>
+            <div class="footer-icons">
+                <a href="facebook.com"><i class="bx bxl-facebook"></i></a>
+                <a href="x.com"><i class="bx bxl-twitter"></i></a>
+                <a href="instagram.com"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 RK Store - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

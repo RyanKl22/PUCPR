@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Ofertas do Dia - RK Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        :root {
+            --bg-color: #1f0000;
+            --tex-color: #fff;
+            --main-color: #ff0408;
+            --other-color: #ffffff;
+            --h1-font: 4rem;
+            --p-font: 1rem;
+        }
+
+        body {
+            background-color: #240202;
+            color: var(--tex-color);
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 8%;
+            background-color: #240202;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: var(--tex-color);
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo i {
+            color: var(--main-color);
+            font-size: 32px;
+            margin-right: 5px;
+        }
+
+        .navegação {
+            display: flex;
+        }
+
+        .navegação a {
+            color: var(--other-color);
+            font-size: var(--p-font);
+            font-weight: 500;
+            margin: 0 30px;
+            transition: color .55s ease;
+        }
+
+        .navegação a:hover {
+            color: var(--main-color);
+        }
+
+        .header-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        #menu {
+            font-size: 35px;
+            color: var(--tex-color);
+            z-index: 10001;
+            cursor: pointer;
+        }
+
+        .header-icons i {
+            margin-right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+
+        .header-icons i:hover {
+            transform: translateY(-5px);
+            color: var(--main-color);
+        }
+
+        /* Estilos atualizados para .deal-item */
+        .deals {
+            padding: 120px 10% 50px;
+        }
+
+        .deal-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid var(--tex-color);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .deal-item img {
+            max-width: 200px; /* Tamanho máximo para a imagem */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .deal-description {
+            flex: 1; /* Espaço para a descrição do produto */
+        }
+
+        .deal-price {
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .btn-buy {
+            padding: 10px 20px;
+            background-color: var(--main-color);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-buy:hover {
+            background-color: #e00307;
+        }
+
+        /* Estilos para o footer */
+        footer {
+            background-color: var(--bg-color);
+            color: var(--tex-color);
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-logo a {
+            color: var(--tex-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo a i {
+            color: var(--main-color);
+            font-size: 1.8rem;
+            margin-right: 5px;
+        }
+
+        .footer-icons a {
+            color: var(--tex-color);
+            font-size: 1.5rem;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .footer-icons a:last-child {
+            margin-right: 0;
+        }
+
+        .footer-icons a:hover {
+            color: var(--main-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom p {
+            color: var(--tex-color);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><i class='bx bx-extension'></i>RK Store</a>
+    
+        <nav>
+            <ul class="navegação">
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="lancamentos.html">Lançamentos</a></li>
+                <li><a href="oferta.html">Oferta do dia</a></li>
+                <li><a href="monte.html">Monte seu PC</a></li>
+            </ul>
+        </nav>
+    
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="deals">
+            <h1>Ofertas do Dia</h1>
+            <br>
+
+            <div class="deal-item">
+                <img src="data:image/webp;base64,UklGRvYPAABXRUJQVlA4IOoPAAAQQgCdASqrAKsAPkkgjUUioiETCb2gKASEoKFsgW44kUKM+g85W3P5/i+zE9Sv7P+5fjR88PQ/5g3OK8wHlHf8L/L+4n9UP99/bP938gH6j+rj/gPY+/rv+i9gb+Qf3T0vP3B+EL9u/2V9pP/z9YBe3mUv2z7f8yDrfzG/mX3j/Tf2724dvu2bvzfrfNf7Af7X0Qf9X6meCf9z/1vsC/yH+zf731M/+P/V+iH6k/8/+j+A/+cf3H/rdiP9t/ZC/YQx4Zb1uB5V3RRxc/5QcQvlg3j7h2Zpdo8xor4TxoBZ4cdkD3fIL0hsv5lOd9DYElU/lkXpJpJkwjSWeQvdvk9WSuTs98id9Le6/tWzFxqXfNa06bkvEumlhdqfsWM8lkwjQtYEFFt/B3cocidzqslZ6kJyUHHBOMcF2eZgFOJ8fklCrpQemMYWIK/9X3Vz91b9ljd26wMYOGIp6L0bE/D2atBGDAXF58wMDCIB97Je4PtqqAJfPa3lW8g1qTrIWoyUouKdGrnQFaN/lT68tgnnOVzIlx+FjFCeN5nwhTA9ZevPcjhJy/Rd6voITF7Q0dLwxLrXHa9EyiRSjVE+okk3WbanovKfBKiyqEH7Rhw69HFVbO7Phf6Cif94XaUWF46A+Z1AXyUwf16hlwlxqngEDMS847/GUfF3HpzDzXnBpt8vECepXoHcCubj8UMM2KSX9VXEjva80AAA/v/BpA2zxvqksJ4KY0HzRqH1v37cWR2/TJFMQQNVZwKdwd8MbnUJjL/zAgku1BstOjAoo8tRcKqq3cLwo6M3Lm45FMPJJ5Md/4/Zxk5cMgQNnNLilg5nST/sxtm3QfuIEYAqYoqp9+o1GoNb2iTW+xUJ0xZGI+BmFWveJHL5qPQTx7e7FJ7ar5xCIx73NNu08C7qwNVGfxna8iupAoULbXNw3oV/afT9h3p56rC0gZRL4WfzAelRbPX+Xg5Wo2Ea/NNVMHEzYB9u0M1FomSlXB/qfe8tM1H2wM/2620CnUC/3uc6C+pfif2GjjKgwr/4lpxkjmkeaDcw0shZ+j/De8qo9omtNehUUyX3rjHjx5vZVyZSnJR/KfqhzEf0kwVSDIZPl91lbbA63ke0TAaOCXXm81MfVG8PvHzQuDwaCGQHkr07PDl1R3046qZhdrydk5p+9S8zb4l+E4ukjeVs1534RXOW6+sWIzX1K1zOxlYYeAcCs8JYlDL+A92WqGJaW4Ipo9dKiJMbhwP8L4f/ordJXoIHlDlL9J7zmA9YZqTHFheD6iXytlhpPo/BYqotyQ2KwktvZ3/4J0EW1Ex9Sz4iNWFyiMq3s2eHOp+ttfn4eMYhTESR85TqWpfjhPj2EtmR7Fu3abMVD5NrctFzjZjXrCrD5uPliBulSBUuxo2RYvTBJwr7xhW99JsfMlTJiXw4Mx4WZD79KeZCeJP3x8U/lp2cDZzADjq19RRXV7/k/wTdLHuvdSlPgay+lt9w2z78ELhMyVFe9gTsP0TQoSlTwJ2oac8sXgBh9Pn9JlrcE5z91X9hpWAka+2yuMAzArd5Uhvk415EmvZOVs3qdOg2ep9rn1I3KjHZ0o8N9nDF2MN9gQwnDvid2JLY9SLjG/kjdPtaRCZQOqfhvA2ZWn3/EoGxEHKcPVOPyRcpyYG+ELj62MLsc/uGZttZCsKwQCqUwfjMf+FLSUcw/24Xv2PtWsPVO3d5VRGb2Qdvwlg1B5W81i8XdjCOZ4czDZuTGMB18CMHVl0c/dLQiaCp15zig94HwDYdbVpP3QWleF6h04O9FZLYnQlUyiQuE3uid7lsDD7YIYTc2jowBmSVaf3xpkDTG9+SHx9PeiqqMB6aeVgUr3pgr0Dn/bxP82bnZ5HF5IN5PM8KzuGrjUlCA0eUWrz6dxxMy7V1Up/nbo/d5mlbKVd0K5lKN5TiQtwIAD+Ln/h8JpXsGwFHsYtj0/oizg5q9HAacgFNkENCN169H2czIegn52kBhGxi32ZLjdmX2PLq3Wars4f/31/WIu38aipKSM91Oo+dOmCSHH6xfEHQYkonLj7Al0a0zpAiQr7HVSMp3fQGa6ox9iLxZhplFYKseSQN0gNh/m2bO3uogEDZFW4qYoA2Mj0QrK7c91/zitbL2Pa8Uh6jgHGbE9KIKzauDVWRjAjw7FdeZ0CQEU+if8J69yXwP0LBb3D1owcYw5rDEXNMyHwl0CBJXin/Z2O8bmqdLV9a+Zt/9Ajf32nU/DA5Hox5eYhfBrI7RulbStgPyhLDa0o1nHK3CjUWhacGBS0QdVAUwJkAoCCACehzWkxMAhWmlElEFnTpAAHz2fi4Q1zn4w2/Uj+5tfHuoO8wLu898WzwzMJWRGL88Uy/zAATrQ1IuONUtngp1QKzf6sGUaHvK5AuBp8RPR1ZMPrVLu1iv27LFsoFYT2bc2XyuRNqfXj8cAig4htkl72ud0edQk7Xta7KO5unUjEv6RQ9uBK0+R4bu8he03JRyzeKtdXLdbSvpNwpeXY1+J0laH6dSa9tUBie8wVV3pNIAS3u5I2OrH49kFW0wcqW6GhiOeMosNOpZ5qvFP3l2IUzlb6X1ILUPVwdNk/J34P/491ehl1clqBitsjnZa8gJ8DmpmT/d9UoZ6rCypyI5A7o8FT/JKSQIFBg3zOfv6knQ/vPd/+iQ+g8Kam673T06NQZSaV3RWLNu4g1hqW4e+ywa81CD7/ojPI3HiT01y+yiFB0BOgq0IWCuieX+xb/Twc3ifaSgB1PHyf6ySfDl/UVuU3tMqyXagLFrHe+DeK86vi7cRyUdioDJbIiW40jub+IruUW13dinHP4pQIs1f0eyqqf32rn1G6ELriHT61tVP2azyz5sJGVWq1J4ZtK1fncYwlNYBZUkn0d2A8efW8RmUsoCr8c8kzAPDY7Ohh5XIwxHmjnSHv1RdUzIAGIJ9jdCd+56Qslc1c8VdMP73T/cc5O93EOde5Xml8FNeStR0f6VLZRkolWmQtZ3lYwWbQSsH5wIbPlccMSGeNJAn0bIMZdgJSThgjWvkH1GSZ/WNn/guBCO2wjztmoEJQfQ5Tt0uQb+PpAO9Rz4VYh+aSJ7BZSBEIm87tDONsa6yveMhHOgCrkJNMVX3zSPYHqN9z8wcyFqmKhjq6rFI8yEhziIKMWprTu39w/tHe8iDNIMZbZbuiEuQwP9/hP/iH3WGAqoKXrrhBDcfIdDciaLr6Bxk1FfLvRXAHT6a5Wwm92CGwUFyisvi7TxAHlgpjzfiImf3MN8P0rRirfpT/dzS1K9ntPi5OwI2+RJQffcjzoI/xO/f263Ys9+2dQMpY5NbKAtYv/8Dk9GemynpgfcrsllKasmYdNXFDdvcpBJXvuwivN8HIdepyBeQ4PVAdYSXr7v3d+mT70noWSOJN9ptuV/NWv6/HbTOCktvYdNgkyUZuwtUnkuGZTiYeGsJWWCwBnnxrgLw35rTrrAgJrS8g0UHig+8JO/xLQOwnh+o+34/v27ZnZ4Zu+LvimxNoM/l9WSCQAZYlsvS1qoLXRkm4jQocmfDTCw695/ndf3jEvcwZvkewcIddr/ynVS16ZBi71KfqodxMQMY62xLO7mRE+eLenr9bLe0WzyZPFQqV9D6klKgmlPQxaw6+nt33J7CzRcq2T23t7QtVtQXh78zav6lgF0GUM85tQ4s7K7bKo9KZTN0hD5TPs5YGT8tpuwvaNaflgCPuGQlOZQDvgNBN3gWa2gsyrcxWjPYdQ1P+ylY4x3mokHH5yw/9zdp5Q3/7rZOLahQqLjtmhWCfgHAhxEeL7hcLrAmhmGY7H7tKTQd9QCZGvI1+8AsIIZny3i0YTAEQlZqcbItdqKP4sC4enW8U7i1ZSKAq33guDSUMFOOqDmgTj8ZyRu1IoozV9VZxFP+CGf2MI6dTz068Qk65R0FaYVsX8P/GL9g9bLfz7b2VKRj0Q6CzfK4EErhdt1UUVKaSEdgMPgUNp8nIFKbdykgfOwAOMo6LUf/I9E5IrFXqalyUJKlGmtgZgKlwwleYq57q4BzFnNaNWHY5tbOo5SKJdlzfgA5ls4byIVQpJf/ToqPtYNwj2n8KLItDW/1jHCbnoINfd++R7jI8RghNkaZk+Kbbi2S52dnXMRsO517H/5f4D8OWhPewOCCiLK7Y1h1Vk32d6RK6bG+XT9D3S264tQn+Iqtt1rzBgH5lWfjn034stgAzdotJX16/89BwllQhlxle0i085SYyhDX/GiOIa4xxbb+mcKS4SiuSdLW0RuO8nUJapTaIqgeJEglztdppEPL17er0unBEAo1TyJkxgLeIHLj4M+2j/Angmn3wrTDc7c+3RTb4WOcwcoiMEWGbJ6d5TnKe6+piAd8DfDSMm/frEBBw6N1IBXtdVZJHBwhLbpbogTYMJpvj2i0eEPZDigGgIwRxsDyYaSD/FUt9PYuSt7V7XWj3sOb9MKyNYPgxVSjjbwfYJ1GqCTjQ2upBhuAWdDsIA+h46+YPB58ANIUbly8VQT0K1UbACtXexcwGfGrr7bzRf38kJQ8IVzgZ5FOG3H0Qs5CiS2+NgdyQhhLnw2QG8sJyKEV6lFW1yCJ7HB0lb2fi45O2lvJtBcWtO3da/fwdldQQ4xclOo2ZSnJ9fWtmt/GtlU+yVPZ6d6K8qCgkHdSERNMfvwfNtyC8MB7TSpW7/KNNtzx66qS1NeXwycMdsjLb/mCQTI/0ZhlT3tO6/O/kSdrT3NpJHYANPIscNff8L9EZFJmMmODAAqBxV1PT4N+5YXzrqmf/VOpJSs9mrrKN8avUnNfn99yHIBF4s6FlK2cD8WgquTinaknct1le+/eEKuk/yHLkcX0W3I9jQAA3mwDM0E1e7gPHAVkVxlxXI9Sw9PtkND+/JUIq0oCh+lmxsF7wp/hn1Ww2tWsOnxhZb0D1C0kNbXvYd5BbzkskkQaRMwlhTidYew1kInDo52pBIb7k9PIFV+4o/XYN/ol4MqX+JjI2u0DgBcY2ivkSLffJpdnkuvwIzNZ8WJCHuIRmL0uDyP8Z76TE8hVbqlmTKr/EwJi3AnaK9dX/bxBzkXh93evFH0h+q00JyYvUJyHWhPMmPK/aUDkUs1kIXATeCAkXhI7vbBVJcZJGwJ99hGP2H2+cL9sv4e3UtZnHk0hdqMZKoHMzf8ftPKkXbQsiBhwxMeBeHM0RFCpXBcVaarNdXPC3jUZqBpUam4ENNNAFBRbzGkaMjuJnC9qkouyRN4MzqAmYvQvNJKNIhlXprKW/BwYzu7fkjpnMUWSOZRdUAkohLczyzsHIUZ6hV43nlnl4bc/UW4utvsGSPFjk2GoAJYqL08WmNouzG4E0nH6PXzEDNZQ3u6WlUmpJM/5bjN7Gtw4pkMpiu3psCCaGY+oz0oQvXT6igkbkgye1a0fq0TdsEyubERGIbCEM5wy4AAAA=" alt="Mouse Gamer RGB" />
+                <div class="deal-description">
+                    <h3>Mouse Gamer RGB</h3>
+                    <p>Mouse óptico com iluminação RGB personalizável.</p>
+                </div>
+                <span class="deal-price">R$ 100,00</span>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            
+            <div class="deal-item">
+                <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/juovobjx/file.png" alt="Teclado Mecânico LED" />
+                <div class="deal-description">
+                    <h3>Teclado Mecânico LED</h3>
+                    <p>Teclado mecânico com iluminação LED e switches Cherry MX.</p>
+                </div>
+                <span class="deal-price">R$ 150,00</span>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            
+            <div class="deal-item">
+                <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/340630/Monitor-Gamer-LG-34-Ultrawide-Full-HD-75Hz-5Ms-HDMI-IPS-HDR10-Freesync-34wp550-b_1693963700_gg.jpg" alt="Monitor Ultrawide 34 polegadas" />
+                <div class="deal-description">
+                    <h3>Monitor Ultrawide 34 polegadas</h3>
+                    <p>Monitor de alta resolução com tela ultrawide de 34 polegadas.</p>
+                </div>
+                <span class="deal-price">R$ 800,00</span>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/71xNjrzG69L.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Headset Gamer Surround" />
+                <div class="deal-description">
+                    <h3>Headset Gamer Surround</h3>
+                    <p>Headset com som surround 7.1 e microfone com cancelamento de ruído.</p>
+                </div>
+                <span class="deal-price">R$ 120,00</span>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/61fS7SGgjML.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Mousepad XL" />
+                <div class="deal-description">
+                    <h3>Mousepad XL</h3>
+                    <p>Mousepad extra grande para maior precisão nos movimentos do mouse.</p>
+                </div>
+                <span class="deal-price">R$ 30,00</span>
+                <button class="btn-buy">Comprar</button>
+            </div>
+            
+            <div class="deal-item">
+                <img src="https://m.media-amazon.com/images/I/810IvIxv7NL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Cadeira Gamer Ergonômica" />
+                <div class="deal-description">
+                    <h3>Cadeira Gamer Ergonômica</h3>
+                    <p>Cadeira gamer com design ergonômico e suporte lombar.</p>
+                </div>
+                <span class="deal-price">R$ 950,00</span>
+                <button class="btn-buy">Comprar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><i class="bx bx-extension"></i>RK Store</a>
+            </div>
+            <div class="footer-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 RK Store - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

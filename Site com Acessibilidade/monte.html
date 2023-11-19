@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Montar PC - RK Store</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        :root {
+            --bg-color: #1f0000;
+            --tex-color: #fff;
+            --main-color: #ff0408;
+            --other-color: #ffffff;
+            --h1-font: 4rem;
+            --p-font: 1rem;
+        }
+
+        body {
+            background-color: #240202;
+            color: var(--tex-color);
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 8%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: var(--tex-color);
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo i {
+            color: var(--main-color);
+            font-size: 32px;
+            margin-right: 5px;
+        }
+
+        .navegação {
+            display: flex;
+        }
+
+        .navegação a {
+            color: var(--other-color);
+            font-size: var(--p-font);
+            font-weight: 500;
+            margin: 0 30px;
+            transition: color .55s ease;
+        }
+
+        .navegação a:hover {
+            color: var(--main-color);
+        }
+
+        .header-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        #menu {
+            font-size: 35px;
+            color: var(--tex-color);
+            z-index: 10001;
+            cursor: pointer;
+        }
+
+        .header-icons i {
+            margin-right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+
+        .header-icons i:hover {
+            transform: translateY(-5px);
+            color: var(--main-color);
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown a {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-top: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: none;
+            transition: opacity 0.3s, transform 0.3s;
+            transform-origin: top;
+            transform: scaleY(0);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: scaleY(1);
+        }
+
+        .dropdown-menu li {
+            padding: 10px;
+        }
+
+        .dropdown-menu li a {
+            text-decoration: none;
+            color: #271111;
+            display: block;
+        }
+
+        .configurator {
+            padding: 120px 10% 50px;
+        }
+
+        .component {
+            margin-bottom: 40px;
+        }
+
+        .component h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid var(--tex-color);
+            background-color: var(--bg-color);
+            color: var(--tex-color);
+        }
+
+        .btn-montar {
+            display: block;
+            margin: 0 auto;
+            padding: 15px 30px;
+            background-color: var(--main-color);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-montar:hover {
+            background-color: #e00307;
+        }
+
+        /* Estilos para o footer */
+        footer {
+            background-color: var(--bg-color);
+            color: var(--tex-color);
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-logo a {
+            color: var(--tex-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo a i {
+            color: var(--main-color);
+            font-size: 1.8rem;
+            margin-right: 5px;
+        }
+
+        .footer-icons a {
+            color: var(--tex-color);
+            font-size: 1.5rem;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .footer-icons a:last-child {
+            margin-right: 0;
+        }
+
+        .footer-icons a:hover {
+            color: var(--main-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom p {
+            color: var(--tex-color);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><i class='bx bx-extension'></i>RK Store</a>
+    
+        <nav>
+            <ul class="navegação">
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="lancamentos.html">Lançamentos</a></li>
+                <li><a href="oferta.html">Oferta do dia</a></li>
+                <li><a href="monte.html">Monte seu PC</a></li>
+            </ul>
+        </nav>
+    
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="configurator">
+            <h1>Monte Seu PC : </h1>
+            <br>
+            <div class="component">
+                <h2>Processador</h2>
+                <select>
+                    <option>Intel Core i5</option>
+                    <option>Intel Core i7</option>
+                    <option>Intel Core i9</option>
+                    <option>AMD Ryzen 5</option>
+                    <option>AMD Ryzen 7</option>
+                    <option>AMD Ryzen 9</option>
+                </select>
+            </div>
+
+            <div class="component">
+                <h2>Placa Mãe</h2>
+                <select>
+                    <option>ASUS PRIME B450M</option>
+                    <option>MSI MPG B550</option>
+                    <option>ASRock B450M Steel Legend</option>
+                </select>
+            </div>
+
+            <div class="component">
+                <h2>Placa de Vídeo</h2>
+                <select>
+                    <option>NVIDIA GTX 1660 Super</option>
+                    <option>NVIDIA RTX 3060</option>
+                    <option>NVIDIA RTX 3070</option>
+                    <option>AMD Radeon RX 5700 XT</option>
+                </select>
+            </div>
+
+            <div class="component">
+                <h2>Memória RAM</h2>
+                <select>
+                    <option>4GB DDR4 2400MHz</option>
+                    <option>8GB DDR4 3200MHz</option>
+                    <option>16GB DDR4 3600MHz</option>
+                    <option>32GB DDR4 4000MHz</option>
+                    <option>64GB DDR4 4400MHz</option>
+                </select>
+            </div>
+
+            <div class="component">
+                <h2>Fontes</h2>
+                <select>
+                    <option>Corsair CV400 - 400W</option>
+                    <option>EVGA 550 B5 - 500W</option>
+                    <option>Cooler Master MWE Gold 650</option>
+                    <option> Seasonic FOCUS PX-850</option>
+                    <option>ASUS ROG Thor 1200W Platinum</option>
+                </select>
+            </div>
+
+            
+            <div class="component">
+                <h2>Armazenamento</h2>
+                <select>
+                    <option>HDD 1TB</option>
+                    <option>HDD 2TB</option>
+                    <option>HDD 4TB</option>
+                    <option>SSD 256GB (SATA)</option>
+                    <option>SSD 1TB (NVMe M.2)</option>
+                </select>
+            </div>
+
+            <button class="btn-montar">Finalizar Configuração</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><i class="bx bx-extension"></i>RK Store</a>
+            </div>
+            <div class="footer-icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 RK Store - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

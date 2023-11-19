@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>RK Store - Sobre Nós</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            background-color: #240202;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 8%;
+            background-color: #240202;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo i {
+            color: #ff0408;
+            font-size: 32px;
+            margin-right: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            transition: color .55s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff0408;
+        }
+
+        .header-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-icons i {
+            margin-right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+
+        .header-icons i:hover {
+            transform: translateY(-5px);
+            color: #ff0408;
+        }
+
+        .content {
+            padding: 150px 10% 50px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #3a3a3a;
+            border-radius: 8px;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+        }
+
+        /* Estilos para o footer */
+        
+        footer {
+            background-color: var(--bg-color);
+            color: var(--tex-color);
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-logo a {
+            color: var(--tex-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-logo a i {
+            color: var(--main-color);
+            font-size: 1.8rem;
+            margin-right: 5px;
+        }
+
+        .footer-icons a {
+            color: var(--tex-color);
+            font-size: 1.5rem;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .footer-icons a:last-child {
+            margin-right: 0;
+        }
+
+        .footer-icons a:hover {
+            color: var(--main-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom p {
+            color: var(--tex-color);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><i class='bx bx-extension'></i>RK Store</a>
+    
+        <nav>
+            <ul class="navegação">
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="lancamentos.html">Lançamentos</a></li>
+                <li><a href="oferta.html">Oferta do dia</a></li>
+                <li><a href="monte.html">Monte seu PC</a></li>
+            </ul>
+        </nav>
+    
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>Sobre a RK Store</h1>
+        <p>A RK Store foi fundada em 2023 com a missão de proporcionar aos amantes de tecnologia produtos de alta qualidade com preços acessíveis. Nós nos orgulhamos de nossa excelente equipe de atendimento ao cliente e da extensa seleção de computadores, hardwares e periféricos que oferecemos.</p>
+
+        <p>Desde o início, nosso objetivo foi criar a melhor experiência de compra online para nossos clientes. Isso significa fornecer não apenas os melhores produtos, mas também um atendimento excepcional ao cliente, entrega rápida e preços imbatíveis.</p>
+
+        <div class="contact-info">
+            <p><i class='bx bx-phone'></i>Telefone: (11) 1234-5678</p>
+            <p><i class='bx bx-envelope'></i>Email: contato@rkstore.com</p>
+            <p><i class='bx bx-map'></i>Endereço: Av. Principal, 123, São Paulo - SP, 01010-010</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><i class="bx bx-extension"></i>RK Store</a>
+            </div>
+            <div class="footer-icons">
+                <a href="facebook.com"><i class="bx bxl-facebook"></i></a>
+                <a href="x.com"><i class="bx bxl-twitter"></i></a>
+                <a href="instagram.com"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 RK Store - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
